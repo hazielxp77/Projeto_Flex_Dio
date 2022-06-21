@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - align content</title>
+
+  <style>
+    .container{
+      height: 350px;
+      max-width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid black;
+    }
+
+    .item{
+      background-color: orangered;
+      padding: 0 5px;
+      margin: 5px;
+      flex: 1;
+      text-align: center;
+      color: white;
+      border: 2px solid black;
+    }
+
+    .stretch{
+      align-content: stretch;
+    }
+
+    .center{
+      align-content: center;
+    }
+
+    .flex-start{
+      align-content: flex-start;
+    }
+
+    .flex-end{
+      align-content: flex-end;
+    }
+
+    .space-around{
+      align-content: space-around;
+    }
+
+    .space-between{
+      align-content: space-between;
+    }
+
+  </style>
+</head>
+<body>
+
+  <p>Stretch</p>
+
+  <div class="container stretch">
+    <div class="item">Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.</div>
+    <div class="item">Sed non consequat odio.</div>
+    <div class="item">Suco de cevadiss deixa as pessoas mais interessantis.</div>
+    <div class="item">Nec orci ornare consequat.</div>
+    <div class="item">Praesent lacinia ultrices consectetur.</div>
+    <div class="item">Sed non ipsum felis.</div>
+    <div class="item">Interagi no mé, cursus quis, vehicula ac nisi.</div>
+  </div>
+
+  <p>Center</p>
+
+  <div class="container center">
+    <div class="item">Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.</div>
+    <div class="item">Sed non consequat odio.</div>
+    <div class="item">Suco de cevadiss deixa as pessoas mais interessantis.</div>
+    <div class="item">Nec orci ornare consequat.</div>
+    <div class="item">Praesent lacinia ultrices consectetur.</div>
+    <div class="item">Sed non ipsum felis.</div>
+    <div class="item">Interagi no mé, cursus quis, vehicula ac nisi.</div>
+  </div>
+  
+  <p>Flex-start</p>
+
+  <div class="container center flex-start">
+    <div class="item">Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.</div>
+    <div class="item">Sed non consequat odio.</div>
+    <div class="item">Suco de cevadiss deixa as pessoas mais interessantis.</div>
+    <div class="item">Nec orci ornare consequat.</div>
+    <div class="item">Praesent lacinia ultrices consectetur.</div>
+    <div class="item">Sed non ipsum felis.</div>
+    <div class="item">Interagi no mé, cursus quis, vehicula ac nisi.</div>
+  </div>
+
+  <p>Flex-end</p>
+
+  <div class="container center flex-end">
+    <div class="item">Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.</div>
+    <div class="item">Sed non consequat odio.</div>
+    <div class="item">Suco de cevadiss deixa as pessoas mais interessantis.</div>
+    <div class="item">Nec orci ornare consequat.</div>
+    <div class="item">Praesent lacinia ultrices consectetur.</div>
+    <div class="item">Sed non ipsum felis.</div>
+    <div class="item">Interagi no mé, cursus quis, vehicula ac nisi.</div>
+  </div>
+
+  <p>Space-around</p>
+
+  <div class="container center space-around">
+    <div class="item">Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.</div>
+    <div class="item">Sed non consequat odio.</div>
+    <div class="item">Suco de cevadiss deixa as pessoas mais interessantis.</div>
+    <div class="item">Nec orci ornare consequat.</div>
+    <div class="item">Praesent lacinia ultrices consectetur.</div>
+    <div class="item">Sed non ipsum felis.</div>
+    <div class="item">Interagi no mé, cursus quis, vehicula ac nisi.</div>
+  </div>
+
+  <p>Space-between</p>
+
+  <div class="container center space-between">
+    <div class="item">Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.</div>
+    <div class="item">Sed non consequat odio.</div>
+    <div class="item">Suco de cevadiss deixa as pessoas mais interessantis.</div>
+    <div class="item">Nec orci ornare consequat.</div>
+    <div class="item">Praesent lacinia ultrices consectetur.</div>
+    <div class="item">Sed non ipsum felis.</div>
+    <div class="item">Interagi no mé, cursus quis, vehicula ac nisi.</div>
+  </div>
+  
+</body>
+</html>
